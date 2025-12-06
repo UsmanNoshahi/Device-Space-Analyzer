@@ -1,0 +1,23 @@
+# Core dependencies (optional but recommended)
+
+# For sending files to Recycle Bin instead of permanent deletion
+send2trash>=1.8.0
+
+# For data visualization (charts and graphs)
+matplotlib>=3.5.0
+
+# For treemap/heatmap visualization (NEW for v3.0)
+squarify>=0.4.3
+
+# For PDF export functionality
+reportlab>=3.6.0
+
+# Note: tkinter comes pre-installed with Python
+# If you're on Linux and tkinter is missing, install it with:
+# sudo apt-get install python3-tk  (Debian/Ubuntu)
+# sudo yum install python3-tkinter  (RedHat/CentOS)
+
+# Version Information:
+# - space_scanner.py (v1.0) - Basic version, no dependencies
+# - space_scanner_enhanced.py (v2.0) - Enhanced version, optional dependencies
+# - space_scanner_ultra.py (v3.0) - Ultra version, includes squarify for treemaps
