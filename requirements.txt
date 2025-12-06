@@ -21,3 +21,4 @@ reportlab>=3.6.0
 # - space_scanner.py (v1.0) - Basic version, no dependencies
 # - space_scanner_enhanced.py (v2.0) - Enhanced version, optional dependencies
 # - space_scanner_ultra.py (v3.0) - Ultra version, includes squarify for treemaps
+# - All Done
