@@ -172,7 +172,7 @@ class FluentCard(tk.Frame):
 class SpaceScannerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Disk Space Scanner Pro")
+        self.root.title("AKTI Disk Space Analyzer")
         self.root.geometry("1600x900")
         self.root.configure(bg=FluentColors.BG_SECONDARY)
 
@@ -222,24 +222,30 @@ class SpaceScannerApp:
         except:
             pass
 
-        # Notebook (tabs)
+        # Notebook (tabs) - Improved styling to prevent shrinking
         style.configure(
             'Fluent.TNotebook',
             background=FluentColors.BG_SECONDARY,
-            borderwidth=0
+            borderwidth=0,
+            tabmargins=[2, 5, 2, 0]
         )
         style.configure(
             'Fluent.TNotebook.Tab',
             background=FluentColors.SURFACE,
             foreground=FluentColors.TEXT_SECONDARY,
-            padding=[20, 12],
-            font=('Segoe UI', 10),
-            borderwidth=0
+            padding=[24, 14],
+            font=('Segoe UI', 10, 'normal'),
+            borderwidth=1,
+            relief=tk.FLAT,
+            focuscolor='none'
         )
         style.map(
             'Fluent.TNotebook.Tab',
-            background=[('selected', FluentColors.PRIMARY)],
-            foreground=[('selected', '#FFFFFF')]
+            background=[('selected', FluentColors.PRIMARY), ('active', FluentColors.CARD_HOVER)],
+            foreground=[('selected', '#FFFFFF'), ('active', FluentColors.TEXT_PRIMARY)],
+            padding=[('selected', [24, 14])],
+            borderwidth=[('selected', 0)],
+            relief=[('selected', tk.FLAT)]
         )
 
         # Treeview
@@ -355,7 +361,7 @@ class SpaceScannerApp:
 
         tk.Label(
             title_frame,
-            text="💾 Disk Space Scanner Pro",
+            text="💾 AKTI Disk Space Analyzer",
             bg=FluentColors.PRIMARY,
             fg="#FFFFFF",
             font=("Segoe UI", 20, "bold")
@@ -363,7 +369,7 @@ class SpaceScannerApp:
 
         tk.Label(
             title_frame,
-            text="Modern storage management and analytics",
+            text="Professional storage management and analytics",
             bg=FluentColors.PRIMARY,
             fg="#E0E0E0",
             font=("Segoe UI", 10)

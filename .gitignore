@@ -1,0 +1,30 @@
+# Build artifacts - PyInstaller
+build/
+dist/
+*.spec
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# User data files
+scan_history.pkl
+scanner_settings.json
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
